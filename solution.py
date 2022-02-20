@@ -48,7 +48,7 @@ def solution2(n):
         ans.append([])
         for j in range(ln):
             ans[i].append(randint(1, 1000))
-        if i % 2 == 0:
+        if i % 2 != 0:
             mergeSort(ans[i])
         else:
             mergeSort(ans[i])
